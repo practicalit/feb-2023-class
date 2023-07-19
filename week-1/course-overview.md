@@ -14,8 +14,8 @@ In this comprehensive, project-based course, you will learn how to build a moder
 8. Integrate the frontend and backend components of your application, connecting your React app with a RESTful API.
 9. Learn testing methodologies and tools for both frontend and backend components, using Jest, React Testing Library, and Supertest.
 10. Understand and apply best practices for project structure, code organization, and optimization.
-11. Deploy your full stack application to cloud platforms and hosting services, such as Heroku, AWS, Netlify, and Vercel.
-12. Gain hands-on experience by developing an Employee Management App, reinforcing the concepts learned in each module through practical application.
+11. Deploy your full stack application to cloud platforms and hosting services, such as Heroku, Netlify, and Vercel.
+12. Gain hands-on experience by developing an Book Finder App, reinforcing the concepts learned in each module through practical application.
 
 ### Exepectations:
 
