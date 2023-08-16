@@ -63,8 +63,7 @@ In the code above:
 Let's say you want to have nested routes. Here's how you can set that up:
 
 ```jsx
-javascriptCopy code
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
 function Dashboard() {
   return (
@@ -84,16 +83,15 @@ function App() {
     <Router>
       {/* ... */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/dashboard" element={<Dashboard />}>
-          <Route path="profile" element={<Profile />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/dashboard' element={<Dashboard />}>
+          <Route path='profile' element={<Profile />} />
         </Route>
       </Routes>
     </Router>
   );
 }
-
 ```
 
 Here, if you navigate to **`/dashboard/profile`**, you'll see both the **`Dashboard`** and **`Profile`** components. This is because **`Outlet`** renders any nested routes.
@@ -103,8 +101,7 @@ Here, if you navigate to **`/dashboard/profile`**, you'll see both the **`Dashbo
 To navigate programmatically in v6, use the **`useNavigate`** hook:
 
 ```jsx
-javascriptCopy code
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function MyComponent() {
   const navigate = useNavigate();
@@ -115,7 +112,6 @@ function MyComponent() {
 
   return <button onClick={goToHome}>Go Home</button>;
 }
-
 ```
 
 ### **5. Access Route Parameters**
@@ -123,8 +119,7 @@ function MyComponent() {
 To access parameters from the URL, use the **`useParams`** hook:
 
 ```jsx
-javascriptCopy code
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 function User() {
   const { userId } = useParams();
@@ -133,7 +128,6 @@ function User() {
 
 // When defining your routes:
 // <Route path="/user/:userId" element={<User />} />
-
 ```
 
 In the code above, if you navigate to **`/user/123`**, the **`User`** component will display "User ID: 123".
