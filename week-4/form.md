@@ -4,7 +4,7 @@
 
 Firstly, let's consider a basic form containing an input for the user's name:
 
-```jsx
+```
 import React, { useState } from "react";
 
 function FormComponent() {
@@ -41,7 +41,7 @@ function FormComponent() {
 
 When dealing with multiple inputs, you can leverage the **`name`** attribute of the input element:
 
-```jsx
+```
 function MultiInputForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -91,7 +91,7 @@ function MultiInputForm() {
 
 You often need to validate form inputs. Here's a simple pattern:
 
-```jsx
+```
 function FormWithValidation() {
   const [name, setName] = useState("");
   const [errors, setErrors] = useState({});
