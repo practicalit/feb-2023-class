@@ -21,9 +21,9 @@ Let's break down the basic concepts and then look at a simple example.
 Example:
 
 ```jsx
-javascriptCopy code
-{ type: 'INCREMENT' }
-
+{
+  type: "INCREMENT";
+}
 ```
 
 **2. Reducer**: Pure functions that take the previous state and an action, and return the next state.
